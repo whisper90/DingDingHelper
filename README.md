@@ -85,17 +85,13 @@
 	```	
 	
 	
+	```	
+ 	  AccessibilityNodeInfo mInfo = mNodeInfos;  //递归找到上班打卡的节点
+ 	  Rect mRect = new Rect();//构建rect
+	  mInfo.getBoundsInScreen(mRect); //给rect赋值
+ 	  //命令执行物理点击 打卡
+	  ShellUtils.execCmd("input tap " + mRect.centerX()+ " " + 	  mRect.centerY(),true)	
 	```
-	
-  AccessibilityNodeInfo mInfo = mNodeInfos;  //递归找到上班打卡的节点
-  Rect mRect = new Rect();//构建rect
-  mInfo.getBoundsInScreen(mRect); //给rect赋值
-  //命令执行物理点击 打卡
-  ShellUtils.execCmd("input tap " + mRect.centerX()+ " " + mRect.centerY(),true)
-	
-	
-	```
-	
 	
 3. 进程保活
 	
@@ -107,9 +103,11 @@
 	
 	一键变身系统级别app 如下命令
 	
+	
 	```
-mount -o rw,remount yassf2 /system/    //重新挂载chmod 777 /system/app/cp /data/app/com.ucmap.apt-2.apk   /system/app/com.ucmap.apt-2.apk  //复制app到system/app/ 这个目录pm install -r \"/system/app/com.ucmap.apt-2.apk\" //安装 am start -n \"com.ucmap.apt/om.ucmap.apt.MainActivity\" -a android.intent.action.MAIN -c android.intent.category.LAUNCHER"//启动apprm /data/app/com.ucmap.apt-2.apk  //删除原有的apk文件mount -o remount,ro -t yaffs2 /dev/block/mtdblock3 /system    //恢复分区
+	mount -o rw,remount yassf2 /system/    //重新挂载	chmod 777 /system/app/	cp /data/app/com.ucmap.apt-2.apk   /system/app/com.ucmap.apt-2.apk  //复制app	到system/app/ 这个目录	pm install -r \"/system/app/com.ucmap.apt-2.apk\" //安装	 am start -n \"com.ucmap.apt/om.ucmap.apt.MainActivity\" -a 	android.intent.action.MAIN -c android.intent.category.LAUNCHER"//启动app	rm /data/app/com.ucmap.apt-2.apk  //删除原有的apk文件	mount -o remount,ro -t yaffs2 /dev/block/mtdblock3 /system    //恢复分区
 	```
+	
 	看下adj值
 	
 	![](./adj.png)
