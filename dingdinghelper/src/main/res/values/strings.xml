@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">钉钉打卡神器</string>
+    <string name="description">自动签到</string>
+    <string name="label">钉钉版自动签到版本</string>
+    <string name="title_activity_login">DingHelper</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Ding Ding Account</string>
+    <string name="prompt_password">Ding Ding Password</string>
+    <string name="action_sign_in">Save And Do Script</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+</resources>
