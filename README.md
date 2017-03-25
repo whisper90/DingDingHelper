@@ -118,7 +118,7 @@
     安装上helper, 你基本可以开心玩耍 , 每天吃完早餐再去上班 , 不用急急忙忙冲上去打完卡在下来买早餐 ...
     最后我想说: 技术无错,看你怎么应用,还我快播啊.(客官们不要迟到啊!)
     
-### 欢迎Fork,PR,Star!!  [钉钉自动打卡](https://github.com/hzlzh/1MarkDown.git)   
+### 欢迎Fork,PR,Star!!  [钉钉自动打卡](https://github.com/Justson/DingDingHelper.git)   
  
 	
 
