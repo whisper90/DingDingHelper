@@ -84,14 +84,18 @@
         
 	```	
 	
+	
 	```
+	
   AccessibilityNodeInfo mInfo = mNodeInfos;  //递归找到上班打卡的节点
   Rect mRect = new Rect();//构建rect
   mInfo.getBoundsInScreen(mRect); //给rect赋值
   //命令执行物理点击 打卡
   ShellUtils.execCmd("input tap " + mRect.centerX()+ " " + mRect.centerY(),true)
 	
+	
 	```
+	
 	
 3. 进程保活
 	
